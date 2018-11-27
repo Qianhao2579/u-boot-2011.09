@@ -2490,7 +2490,7 @@ Linker script and memory map
  .iplt          0x00000000        0x0 arch/arm/cpu/armv7/sun8iw8/spare_head.o
                 0x4096eda0                . = ALIGN (0x10)
 
-.rodata         0x4096eda0    0x1b8a1
+.rodata         0x4096eda0    0x1b8a9
  *(EXCLUDE_FILE(board/sunxi/sun8iw8/standby/libstandby.o) .rodata*)
  .rodata        0x4096eda0       0x16 arch/arm/cpu/armv7/libarmv7.o
  .rodata.str1.1
@@ -2505,190 +2505,190 @@ Linker script and memory map
                 0x4096f758      0x495 arch/arm/lib/libarm.o
                                 0x4c6 (size before relaxing)
  *fill*         0x4096fbed        0x3 00
- .rodata        0x4096fbf0      0x8ec common/libcommon.o
+ .rodata        0x4096fbf0      0x8f0 common/libcommon.o
                 0x4096fc84                version_string
-                0x4096fceb                default_environment
-                0x409701c0                sunxi_sprite_environment
+                0x4096fcf1                default_environment
+                0x409701c6                sunxi_sprite_environment
  .rodata.str1.1
-                0x409704dc     0x4726 common/libcommon.o
+                0x409704e0     0x4726 common/libcommon.o
                                0x4c59 (size before relaxing)
- *fill*         0x40974c02        0x2 00
- .rodata        0x40974c04       0x20 disk/libdisk.o
+ *fill*         0x40974c06        0x2 00
+ .rodata        0x40974c08       0x20 disk/libdisk.o
  .rodata.str1.1
-                0x40974c24      0x2ba disk/libdisk.o
+                0x40974c28      0x2ba disk/libdisk.o
                                 0x2ec (size before relaxing)
  .rodata.str1.1
-                0x40974ede       0x5a drivers/dma/libdma.o
- .rodata        0x40974f38     0x2971 drivers/mmc/libmmc.o
+                0x40974ee2       0x5a drivers/dma/libdma.o
+ .rodata        0x40974f3c     0x2971 drivers/mmc/libmmc.o
  .rodata.str1.1
-                0x409778a9     0x2460 drivers/mmc/libmmc.o
+                0x409778ad     0x2460 drivers/mmc/libmmc.o
                                0x248d (size before relaxing)
  .rodata.str1.1
-                0x40979d09       0x49 drivers/net/libnet.o
+                0x40979d0d       0x49 drivers/net/libnet.o
                                  0x52 (size before relaxing)
  .rodata.str1.1
-                0x40979d52      0x42d drivers/power/libpower.o
+                0x40979d56      0x42d drivers/power/libpower.o
                                 0x444 (size before relaxing)
- *fill*         0x4097a17f        0x1 00
- .rodata        0x4097a180       0x58 drivers/pwm/libsunxi_pwm.o
+ *fill*         0x4097a183        0x1 00
+ .rodata        0x4097a184       0x58 drivers/pwm/libsunxi_pwm.o
  .rodata.str1.1
-                0x4097a1d8       0x25 drivers/pwm/libsunxi_pwm.o
+                0x4097a1dc       0x25 drivers/pwm/libsunxi_pwm.o
                                  0x2e (size before relaxing)
- *fill*         0x4097a1fd        0x3 00
- .rodata        0x4097a200       0x10 drivers/serial/libserial.o
+ *fill*         0x4097a201        0x3 00
+ .rodata        0x4097a204       0x10 drivers/serial/libserial.o
  .rodata.str1.1
-                0x4097a210       0xfe drivers/spi/libspi.o
+                0x4097a214       0xfe drivers/spi/libspi.o
                                 0x11b (size before relaxing)
- *fill*         0x4097a30e        0x2 00
- .rodata        0x4097a310      0x280 drivers/srclib/libjpeddec.o
+ *fill*         0x4097a312        0x6 00
+ .rodata        0x4097a318      0x280 drivers/srclib/libjpeddec.o
  .rodata.str1.1
-                0x4097a590      0x2ed drivers/srclib/libjpeddec.o
+                0x4097a598      0x2ed drivers/srclib/libjpeddec.o
                                 0x2f1 (size before relaxing)
- .rodata        0x4097a87d       0x33 drivers/storage_type/libstorage_type.o
+ .rodata        0x4097a885       0x33 drivers/storage_type/libstorage_type.o
  .rodata.str1.1
-                0x4097a8b0      0x1c0 drivers/storage_type/libstorage_type.o
+                0x4097a8b8      0x1c0 drivers/storage_type/libstorage_type.o
                                 0x1ca (size before relaxing)
- .rodata        0x4097aa70      0x550 drivers/video_sunxi/libvideo_sunxi.o
+ .rodata        0x4097aa78      0x550 drivers/video_sunxi/libvideo_sunxi.o
  .rodata.str1.1
-                0x4097afc0     0x106d drivers/video_sunxi/libvideo_sunxi.o
+                0x4097afc8     0x106d drivers/video_sunxi/libvideo_sunxi.o
                                0x125c (size before relaxing)
- .rodata        0x4097c02d       0x24 fs/aw_fs/libawfat.o
+ .rodata        0x4097c035       0x24 fs/aw_fs/libawfat.o
  .rodata.str1.1
-                0x4097c051      0x18a fs/aw_fs/libawfat.o
+                0x4097c059      0x18a fs/aw_fs/libawfat.o
                                 0x192 (size before relaxing)
- *fill*         0x4097c1db        0x1 00
- .rodata        0x4097c1dc       0x18 fs/fat/libfat.o
+ *fill*         0x4097c1e3        0x1 00
+ .rodata        0x4097c1e4       0x18 fs/fat/libfat.o
  .rodata.str1.1
-                0x4097c1f4      0x2b9 fs/fat/libfat.o
+                0x4097c1fc      0x2b9 fs/fat/libfat.o
                                 0x2f9 (size before relaxing)
- *fill*         0x4097c4ad        0x3 00
- .rodata        0x4097c4b0      0x827 lib/libgeneric.o
-                0x4097c4b0                crc7_syndrome_table
-                0x4097cbb6                _ctype
-                0x4097ccc6                hex_asc
+ *fill*         0x4097c4b5        0x3 00
+ .rodata        0x4097c4b8      0x827 lib/libgeneric.o
+                0x4097c4b8                crc7_syndrome_table
+                0x4097cbbe                _ctype
+                0x4097ccce                hex_asc
  .rodata.str1.1
-                0x4097ccd7      0x15a lib/libgeneric.o
+                0x4097ccdf      0x15a lib/libgeneric.o
                                 0x170 (size before relaxing)
- *fill*         0x4097ce31        0x3 00
- .rodata        0x4097ce34      0x9cc lib/zlib/libz.o
-                0x4097d7d8                z_errmsg
+ *fill*         0x4097ce39        0x3 00
+ .rodata        0x4097ce3c      0x9cc lib/zlib/libz.o
+                0x4097d7e0                z_errmsg
  .rodata.str1.1
-                0x4097d800      0x21c lib/zlib/libz.o
+                0x4097d808      0x21c lib/zlib/libz.o
                                 0x21d (size before relaxing)
  .rodata.str1.1
-                0x4097da1c      0x121 memtest/libsunxi_memtest.o
+                0x4097da24      0x121 memtest/libsunxi_memtest.o
                                 0x134 (size before relaxing)
  .rodata.str1.1
-                0x4097db3d       0xc3 nand_sunxi/sun8iw8/nand_interface/libnand_interface.o
+                0x4097db45       0xc3 nand_sunxi/sun8iw8/nand_interface/libnand_interface.o
  .rodata.str1.1
-                0x4097dc00      0xe27 nand_sunxi/sun8iw8/osal/libnand_osal.o
+                0x4097dc08      0xe27 nand_sunxi/sun8iw8/osal/libnand_osal.o
                                 0xe5a (size before relaxing)
- .rodata        0x4097ea27       0x22 net/libnet.o
+ .rodata        0x4097ea2f       0x22 net/libnet.o
  .rodata.str1.1
-                0x4097ea49      0x6a0 net/libnet.o
+                0x4097ea51      0x6a0 net/libnet.o
                                 0x760 (size before relaxing)
  .rodata.str1.1
-                0x4097f0e9     0x1f73 sprite/libsprite.o
+                0x4097f0f1     0x1f73 sprite/libsprite.o
                                0x228d (size before relaxing)
- .rodata        0x4098105c       0x78 usb_sunxi/libsunxi_usb.o
-                0x4098105c                RequestSense
-                0x40981070                InquiryData
-                0x40981098                pburn_RequestSense
-                0x409810ac                pburn_InquiryData
+ .rodata        0x40981064       0x78 usb_sunxi/libsunxi_usb.o
+                0x40981064                RequestSense
+                0x40981078                InquiryData
+                0x409810a0                pburn_RequestSense
+                0x409810b4                pburn_InquiryData
  .rodata.str1.1
-                0x409810d4     0x2037 usb_sunxi/libsunxi_usb.o
+                0x409810dc     0x2037 usb_sunxi/libsunxi_usb.o
                                0x2b49 (size before relaxing)
  .rodata.str1.1
-                0x4098310b      0x123 board/sunxi/sun8iw8/libsun8iw8.o
- *fill*         0x4098322e        0x2 00
- .rodata        0x40983230       0x47 board/sunxi/libsunxi.o
+                0x40983113      0x123 board/sunxi/sun8iw8/libsun8iw8.o
+ *fill*         0x40983236        0x2 00
+ .rodata        0x40983238       0x47 board/sunxi/libsunxi.o
  .rodata.str1.1
-                0x40983277     0x1b15 board/sunxi/libsunxi.o
+                0x4098327f     0x1b15 board/sunxi/libsunxi.o
                                0x1d56 (size before relaxing)
  .rodata.str1.1
-                0x40984d8c       0x94 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_uboot_interface.o)
- .rodata        0x40984e20       0x6d nand_sunxi/sun8iw8/libnand-sun8iw8(nand_format.o)
+                0x40984d94       0x94 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_uboot_interface.o)
+ .rodata        0x40984e28       0x6d nand_sunxi/sun8iw8/libnand-sun8iw8(nand_format.o)
  .rodata.str1.1
-                0x40984e8d      0x438 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_format.o)
+                0x40984e95      0x438 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_format.o)
                                 0x43a (size before relaxing)
- .rodata        0x409852c5        0x3 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_phy.o)
+ .rodata        0x409852cd        0x3 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_phy.o)
  .rodata.str1.1
-                0x409852c8      0x838 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_phy.o)
- .rodata        0x40985b00        0xb nand_sunxi/sun8iw8/libnand-sun8iw8(nand_physic_interface.o)
+                0x409852d0      0x838 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_phy.o)
+ .rodata        0x40985b08        0xb nand_sunxi/sun8iw8/libnand-sun8iw8(nand_physic_interface.o)
  .rodata.str1.1
-                0x40985b0b      0x299 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_physic_interface.o)
+                0x40985b13      0x299 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_physic_interface.o)
                                 0x55b (size before relaxing)
- .rodata        0x40985da4       0x40 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_scan.o)
+ .rodata        0x40985dac       0x40 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_scan.o)
  .rodata.str1.1
-                0x40985de4      0xa27 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_scan.o)
+                0x40985dec      0xa27 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_scan.o)
                                 0xa2e (size before relaxing)
  .rodata.str1.1
-                0x4098680b       0xfd nand_sunxi/sun8iw8/libnand-sun8iw8(spic_op.o)
+                0x40986813       0xfd nand_sunxi/sun8iw8/libnand-sun8iw8(spic_op.o)
                                 0x12c (size before relaxing)
  .rodata.str1.1
-                0x40986908      0x2e4 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_secure_storage.o)
+                0x40986910      0x2e4 nand_sunxi/sun8iw8/libnand-sun8iw8(nand_secure_storage.o)
  .rodata.str1.1
-                0x40986bec      0xb9b nand_sunxi/sun8iw8/libnand-sun8iw8(nand_info_init_v2.o)
+                0x40986bf4      0xb9b nand_sunxi/sun8iw8/libnand-sun8iw8(nand_info_init_v2.o)
  .rodata.str1.1
-                0x40987787      0x204 nand_sunxi/sun8iw8/libnand-sun8iw8(build_phy_partition_v2.o)
+                0x4098778f      0x204 nand_sunxi/sun8iw8/libnand-sun8iw8(build_phy_partition_v2.o)
  .rodata.str1.1
-                0x4098798b       0x18 nand_sunxi/sun8iw8/libnand-sun8iw8(build_nand_partition.o)
+                0x40987993       0x18 nand_sunxi/sun8iw8/libnand-sun8iw8(build_nand_partition.o)
  .rodata.str1.1
-                0x409879a3      0x34c nand_sunxi/sun8iw8/libnand-sun8iw8(build_phy_partition.o)
+                0x409879ab      0x34c nand_sunxi/sun8iw8/libnand-sun8iw8(build_phy_partition.o)
                                 0x3bb (size before relaxing)
  .rodata.str1.1
-                0x40987cef      0x1be nand_sunxi/sun8iw8/libnand-sun8iw8(nand_info_init.o)
+                0x40987cf7      0x1be nand_sunxi/sun8iw8/libnand-sun8iw8(nand_info_init.o)
                                 0x7f6 (size before relaxing)
  .rodata.str1.1
-                0x40987ead       0x39 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_init.o)
+                0x40987eb5       0x39 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_init.o)
                                  0x56 (size before relaxing)
  .rodata.str1.1
-                0x40987ee6       0xb9 nand_sunxi/sun8iw8/libnand-sun8iw8(spi_nand0.o)
+                0x40987eee       0xb9 nand_sunxi/sun8iw8/libnand-sun8iw8(spi_nand0.o)
  .rodata.str1.1
-                0x40987f9f       0x3d nand_sunxi/sun8iw8/libnand-sun8iw8(spi_nand1.o)
+                0x40987fa7       0x3d nand_sunxi/sun8iw8/libnand-sun8iw8(spi_nand1.o)
                                  0xab (size before relaxing)
  .rodata.str1.1
-                0x40987fdc       0x3d nand_sunxi/sun8iw8/libnand-sun8iw8(spi_nand2.o)
+                0x40987fe4       0x3d nand_sunxi/sun8iw8/libnand-sun8iw8(spi_nand2.o)
                                  0xb9 (size before relaxing)
  .rodata.str1.1
-                0x40988019       0x3d nand_sunxi/sun8iw8/libnand-sun8iw8(spi_nand3.o)
+                0x40988021       0x3d nand_sunxi/sun8iw8/libnand-sun8iw8(spi_nand3.o)
                                  0xab (size before relaxing)
  .rodata.str1.1
-                0x40988056      0x1d0 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_cache.o)
+                0x4098805e      0x1d0 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_cache.o)
                                 0x1ed (size before relaxing)
  .rodata.str1.1
-                0x40988226       0x35 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_common.o)
+                0x4098822e       0x35 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_common.o)
  .rodata.str1.1
-                0x4098825b       0x96 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_start.o)
+                0x40988263       0x96 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_start.o)
                                  0xb3 (size before relaxing)
  .rodata.str1.1
-                0x409882f1      0x30a nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_interface.o)
+                0x409882f9      0x30a nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_interface.o)
  .rodata.str1.1
-                0x409885fb      0x45d nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_logic.o)
+                0x40988603      0x45d nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_logic.o)
  .rodata.str1.1
-                0x40988a58      0x520 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_gc.o)
+                0x40988a60      0x520 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_gc.o)
  .rodata.str1.1
-                0x40988f78     0x1540 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_build.o)
+                0x40988f80     0x1540 nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_build.o)
                                0x156f (size before relaxing)
  .rodata.str1.1
-                0x4098a4b8      0x16e nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_list.o)
+                0x4098a4c0      0x16e nand_sunxi/sun8iw8/libnand-sun8iw8(nftl_list.o)
  .rodata.str1.1
-                0x4098a626       0x1b /home/dev/v3s/rainbow-pi-sdk/u-boot-2011.09/arch/arm/lib/eabi_compat.o
+                0x4098a62e       0x1b /home/dev/v3s/rainbow-pi-sdk/u-boot-2011.09/arch/arm/lib/eabi_compat.o
 
-.hash           0x4098a644       0x58
- .hash          0x4098a644       0x58 arch/arm/cpu/armv7/sun8iw8/spare_head.o
+.hash           0x4098a64c       0x58
+ .hash          0x4098a64c       0x58 arch/arm/cpu/armv7/sun8iw8/spare_head.o
 
-.ARM.extab      0x4098a69c        0x0
- .ARM.extab     0x4098a69c        0x0 drivers/srclib/libjpeddec.o
- .ARM.extab     0x4098a69c        0x0 /home/dev/v3s/rainbow-pi-sdk/tools/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(bpabi.o)
- .ARM.extab     0x4098a69c        0x0 /home/dev/v3s/rainbow-pi-sdk/tools/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_divdi3.o)
- .ARM.extab     0x4098a69c        0x0 /home/dev/v3s/rainbow-pi-sdk/tools/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_udivdi3.o)
+.ARM.extab      0x4098a6a4        0x0
+ .ARM.extab     0x4098a6a4        0x0 drivers/srclib/libjpeddec.o
+ .ARM.extab     0x4098a6a4        0x0 /home/dev/v3s/rainbow-pi-sdk/tools/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(bpabi.o)
+ .ARM.extab     0x4098a6a4        0x0 /home/dev/v3s/rainbow-pi-sdk/tools/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_divdi3.o)
+ .ARM.extab     0x4098a6a4        0x0 /home/dev/v3s/rainbow-pi-sdk/tools/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_udivdi3.o)
 
-.ARM.exidx      0x4098a69c       0x38
- .ARM.exidx     0x4098a69c       0x10 drivers/srclib/libjpeddec.o
- .ARM.exidx     0x4098a6ac       0x10 /home/dev/v3s/rainbow-pi-sdk/tools/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(bpabi.o)
- .ARM.exidx     0x4098a6bc        0x8 /home/dev/v3s/rainbow-pi-sdk/tools/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_divdi3.o)
- .ARM.exidx     0x4098a6c4       0x10 /home/dev/v3s/rainbow-pi-sdk/tools/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_udivdi3.o)
+.ARM.exidx      0x4098a6a4       0x38
+ .ARM.exidx     0x4098a6a4       0x10 drivers/srclib/libjpeddec.o
+ .ARM.exidx     0x4098a6b4       0x10 /home/dev/v3s/rainbow-pi-sdk/tools/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(bpabi.o)
+ .ARM.exidx     0x4098a6c4        0x8 /home/dev/v3s/rainbow-pi-sdk/tools/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_divdi3.o)
+ .ARM.exidx     0x4098a6cc       0x10 /home/dev/v3s/rainbow-pi-sdk/tools/external-toolchain/bin/../lib/gcc/arm-linux-gnueabi/4.6.3/libgcc.a(_udivdi3.o)
                                   0x8 (size before relaxing)
                 0x4098a6e0                . = ALIGN (0x10)
 
